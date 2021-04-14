@@ -1,0 +1,30 @@
+Screenlist:
+    FrontScreen:
+    Question1:
+
+<FrontScreen>:
+    name: "0"
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+
+        GridLayout:
+            rows:2
+            Label:
+                text:"Welcome to The Kobe Bryant Quiz!"
+            Button:
+                text: "Begin"
+                on_release: app.root.current : "1"
+
+<Question1>:
+    name:"1"
+    size: root.width, root.height
+
+    GridLayout:
+        rows:5
+        Label:
+            text:"What year was Kobe Bryant drafted?"
+        Button:
+            text: "1997"
+
